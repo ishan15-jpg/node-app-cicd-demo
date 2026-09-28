@@ -9,4 +9,10 @@ app.get('/health', (_, res) => {
     })
 })
 
+app.get('/hello', (_,res) => {
+    res.status(200).json({
+        message: "Hello World"
+    })
+})
+
 export default app
